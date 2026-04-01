@@ -1,0 +1,281 @@
+#Root {
+    flex-direction: row;
+    -unity-font-definition: url("project://database/Assets/Fonts/PressStart2P-Regular.ttf?fileID=12800000&guid=63084629930ba974c991ee5b98c313da&type=3#PressStart2P-Regular");
+    color: rgb(245, 255, 232);
+    font-size: 8px;
+}
+
+.Segment {
+    width: 20%;
+    position: absolute;
+    height: 100%;
+}
+
+.Title {
+    -unity-text-align: middle-center;
+}
+
+#OmenCardContainer {
+    flex-direction: row;
+    position: absolute;
+    top: 76.55%;
+    left: 50%;
+    translate: -50% -50%;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    width: 300px;
+    justify-content: center;
+}
+
+.BlackOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.OmenCard {
+    width: 38px;
+    height: 53px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    scale: 1;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.OmenCard:disabled {
+    opacity: 1;
+}
+
+.OmenCard:hover {
+    scale: 1.05;
+}
+
+#ButtonGroup {
+    margin-top: 70px;
+}
+
+#CashOutButton {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-end;
+}
+
+.Button {
+    border-left-color: rgb(245, 255, 232);
+    border-right-color: rgb(245, 255, 232);
+    border-top-color: rgb(245, 255, 232);
+    border-bottom-color: rgb(245, 255, 232);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    scale: 1;
+}
+
+.Button:hover {
+    border-left-color: rgb(255, 238, 131);
+    border-right-color: rgb(255, 238, 131);
+    border-top-color: rgb(255, 238, 131);
+    border-bottom-color: rgb(255, 238, 131);
+    color: rgb(255, 238, 131);
+    scale: 1.01;
+}
+
+.Phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.PhoneButton {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    transition-property: border-color, scale;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    scale: 1;
+}
+
+.PhoneButton:hover {
+    border-left-color: rgb(245, 255, 232);
+    border-right-color: rgb(245, 255, 232);
+    border-top-color: rgb(245, 255, 232);
+    border-bottom-color: rgb(245, 255, 232);
+    scale: 1.05;
+}
+
+.PhoneButton:disabled {
+    opacity: 1;
+}
+
+#SettingsOverlay {
+    background-color: rgba(27, 31, 33, 0.71);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#SettingsContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#Settings {
+    align-items: center;
+    height: 100%;
+    margin-top: 134px;
+}
+
+.ExitButton {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: flex-start;
+    position: absolute;
+    scale: 1;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+
+.ExitButton:hover {
+    scale: 1.1;
+    color: rgb(255, 238, 131);
+}
+
+.Slider {
+    width: 80%;
+}
+
+.Outcome {
+    align-self: center;
+    align-items: center;
+    background-color: rgb(27, 31, 33);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+#Inventory {
+    position: absolute;
+    flex-direction: row;
+}
+
+.Item {
+    position: absolute;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    scale: 1;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+
+.Item:hover {
+    scale: 1.05;
+}
+
+.ItemTooltip {
+    -unity-font-definition: url("project://database/Assets/Fonts/PressStart2P-Regular.ttf?fileID=12800000&guid=63084629930ba974c991ee5b98c313da&type=3#PressStart2P-Regular");
+    color: rgb(245, 255, 232);
+    font-size: 8px;
+}
+
+.TargetPeekArmed {
+    border-left-color: rgb(245, 255, 232);
+    border-right-color: rgb(245, 255, 232);
+    border-top-color: rgb(245, 255, 232);
+    border-bottom-color: rgb(245, 255, 232);
+    width: 38px;
+    height: 53px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    scale: 1;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.TargetPeekArmed:disabled {
+    opacity: 1;
+}
+
+.TargetPeekArmed:hover {
+    scale: 1.05;
+}

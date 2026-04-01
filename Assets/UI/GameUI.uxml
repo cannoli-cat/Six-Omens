@@ -1,0 +1,75 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameUSS.uss?fileID=7433441132597879392&amp;guid=8ca953a64b4f4684ba4e06e7481f1685&amp;type=3#GameUSS" />
+    <ui:VisualElement name="Root" style="flex-grow: 1;">
+        <ui:VisualElement name="LeftSide" picking-mode="Ignore" class="Segment" style="flex-grow: 1;">
+            <ui:Label text="Processed&#10;#1" name="ProcessedLabel" class="Title" />
+            <ui:Label text="Multiplier&#10;1.045x" name="MultiplierLabel" class="Title" />
+            <ui:VisualElement name="ButtonGroup" style="flex-grow: 1;">
+                <ui:Button text="Peek Random" name="PeekButton" class="Button" />
+                <ui:Button text="Flip One" name="FlipOneButton" class="Button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement picking-mode="Ignore" class="Phone" style="flex-grow: 1; top: 40%;">
+            <ui:Button enable-rich-text="true" name="PhoneButton" class="PhoneButton">
+                <ui:VisualElement name="Phone" picking-mode="Ignore" style="background-image: url(&quot;project://database/Assets/Sprites/phone.png?fileID=21300000&amp;guid=2cdac6edfdbc0a045902d7d15f5639ac&amp;type=3#phone&quot;); width: 94px; height: 33px; top: 23px;" />
+                <ui:VisualElement name="Phone-part" picking-mode="Ignore" style="background-image: url(&quot;project://database/Assets/Sprites/phone-part.png?fileID=21300000&amp;guid=e0bf374fb2d4e4040a549c571fb08df7&amp;type=3#phone-part&quot;); width: 55px; height: 83px;" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:VisualElement name="Inventory" style="flex-grow: 1; height: 64px; width: 396px; top: 246px; left: 121px; justify-content: flex-start;">
+            <ui:VisualElement name="LeftSide" style="flex-grow: 1; width: 50%;">
+                <ui:Button name="ItemTL" class="Item" style="width: 41px; height: 27px; translate: 16px 0;" />
+                <ui:Button name="ItemBL" class="Item" style="width: 25px; height: 49px; bottom: -16px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="RightSide" style="flex-grow: 2; width: 50%; flex-direction: column; align-items: flex-end;">
+                <ui:Button name="ItemTR" class="Item" style="width: 32px; height: 37px; translate: -16px 0;" />
+                <ui:Button name="ItemBR" class="Item" style="width: 25px; height: 49px; bottom: -16px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="OmenCardContainer" picking-mode="Ignore" class="CardContainer" />
+        <ui:VisualElement name="RightSide" picking-mode="Ignore" class="Segment" style="flex-grow: 1; right: 0;">
+            <ui:Label text="Top Score&lt;br&gt;$300" name="TopScoreLabel" class="Title" style="white-space: normal;" />
+            <ui:Label text="Score&lt;br&gt;$300" name="BalanceLabel" class="Title" style="white-space: normal;" />
+            <ui:VisualElement name="ButtonGroup" style="flex-grow: 1;">
+                <ui:Button text="Will Die" name="WillDieButton" class="Button" />
+                <ui:Button text="Will Live" name="WillLiveButton" class="Button" />
+            </ui:VisualElement>
+            <ui:Button text="Cash Out" name="CashOutButton" class="Button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="PauseMenu" style="flex-grow: 1; display: none;">
+            <ui:VisualElement name="SettingsOverlay" />
+            <ui:Label text="Paused" class="Title" />
+            <ui:VisualElement name="ButtonGroup" style="flex-grow: 1; align-self: center;">
+                <ui:Button text="Resume" name="ResumeButton" class="Button" />
+                <ui:Button text="Settings" name="SettingsButton" class="Button" />
+                <ui:Button text="Quit" name="QuitButton" class="Button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsContainer" style="display: none;">
+            <ui:VisualElement name="SettingsOverlay" />
+            <ui:VisualElement name="Settings">
+                <ui:Slider label="Master" value="42" high-value="1" name="MasterVolume" class="Slider" />
+                <ui:Slider label="Music" value="42" high-value="1" name="MusicVolume" class="Slider" />
+                <ui:Slider label="SFX" value="42" high-value="1" name="SFXVolume" class="Slider" />
+                <ui:DropdownField label="Display" name="DisplayDropDown" />
+            </ui:VisualElement>
+            <ui:Button text="X" name="ExitButton" class="ExitButton" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BlackOverlay" picking-mode="Ignore" class="BlackOverlay" style="flex-grow: 1; background-color: rgb(27, 31, 33); opacity: 0; display: flex; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        <ui:VisualElement name="LoseGameScreen" class="Outcome" style="flex-grow: 1; display: none;">
+            <ui:Label text="You went bankrupt." name="LoseGameTitle" />
+            <ui:Label text="Balance: $-200&#10;Lifetime Total Score: $1500" name="LoseGameBalance" style="-unity-text-align: middle-center;" />
+            <ui:Label text="You made a total of 15 guesses.&lt;br&gt;&#10;15 died.&lt;br&gt;&#10;20 lived.&lt;br&gt;&#10;15 you weren&apos;t so sure about." name="LoseGameStats" style="-unity-text-align: upper-center;" />
+            <ui:Button text="To Main Menu" name="LoseToMainMenuButton" class="Button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="WinGameScreen" class="Outcome" style="flex-grow: 1; display: none;">
+            <ui:Label text="You made enough money to satiate your hunger." name="WinGameTitle" />
+            <ui:Label text="Balance: $-200&#10;Lifetime Total Score: $1500" name="WinGameBalance" style="-unity-text-align: middle-center;" />
+            <ui:Label text="You made a total of 15 guesses.&lt;br&gt;&#10;15 died.&lt;br&gt;&#10;20 lived.&lt;br&gt;&#10;15 you weren&apos;t so sure about." name="WinGameStats" style="-unity-text-align: upper-center;" />
+            <ui:Button text="To Main Menu" name="WinToMainMenuButton" class="Button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="StartGameScreen" class="Screen" style="flex-grow: 1; display: none;">
+            <ui:Label name="CutsceneLabel" style="width: 100%; height: 100%; -unity-text-align: middle-center; opacity: 0;" />
+            <ui:Label text="&lt;i&gt;Press space to continue" style="position: absolute; right: 0; bottom: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

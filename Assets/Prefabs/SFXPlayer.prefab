@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7988862216902778247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4463776238037637175}
+  - component: {fileID: 3270640892017627819}
+  m_Layer: 0
+  m_Name: SFXPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4463776238037637175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988862216902778247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3270640892017627819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988862216902778247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92525613e2ec5ec4e82d100f92063dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxOutput: {fileID: 409640985575626486, guid: dc6b028b0d3c01b48983c79519891285, type: 2}
+  phoneRingClip: {fileID: 8300000, guid: c7df89a7d6fb69f48822f48290ad0f84, type: 3}
+  phonePickupClip: {fileID: 8300000, guid: 61da56e4b2dcea84298e600387fb5efa, type: 3}
+  cardFlipClip: {fileID: 8300000, guid: 2bfd07d7928ebf644a79098b578873a8, type: 3}
+  buttonClickClip: {fileID: 8300000, guid: de2ec70c7b2f7c84697aaa61d0bf81a1, type: 3}
+  clockTickClip: {fileID: 8300000, guid: 2b4a94e8ebd26754f94470f0f12d2741, type: 3}
+  clockDingClip: {fileID: 8300000, guid: c4046e974298c964396fc8eb8a63aba2, type: 3}
+  wrongGuessClip: {fileID: 8300000, guid: 6b8957fd4e7f7f44ca9ecb4c81366702, type: 3}
+  rightGuessClip: {fileID: 8300000, guid: 015e4473f66bde44f89303656ba4212d, type: 3}
+  pitchJitter: 0.08
+  clockPitchJitter: 0.03

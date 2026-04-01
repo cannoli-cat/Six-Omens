@@ -1,0 +1,23 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenuUSS.uss?fileID=7433441132597879392&amp;guid=8a7348050c43d0a4aa42c78eb73cd68d&amp;type=3#MainMenuUSS" />
+    <ui:VisualElement name="Root" style="flex-grow: 1;">
+        <ui:VisualElement class="Menu">
+            <ui:Label text="Six Omens" name="Title" class="Title" />
+            <ui:VisualElement name="ButtonContainer" class="ButtonContainer">
+                <ui:Button text="PLAY" name="PlayButton" class="Button" />
+                <ui:Button text="SETTINGS" name="SettingsButton" class="Button" />
+                <ui:Button text="QUIT" name="QuitButton" class="Button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsContainer" style="display: none;">
+            <ui:VisualElement name="SettingsOverlay" />
+            <ui:VisualElement name="Settings" style="margin-top: 134px;">
+                <ui:Slider label="Master" value="42" high-value="1" name="MasterVolume" class="Slider" />
+                <ui:Slider label="Music" value="42" high-value="1" name="MusicVolume" class="Slider" />
+                <ui:Slider label="SFX" value="42" high-value="1" name="SFXVolume" class="Slider" />
+                <ui:DropdownField label="Display" name="DisplayDropDown" />
+            </ui:VisualElement>
+            <ui:Button text="X" name="ExitButton" class="ExitButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
