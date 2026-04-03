@@ -15,7 +15,7 @@ Six Omens is a short horror game built in Unity. Each round you answer a phone c
 - Timed decision rounds with a streak/speed multiplier economy
 - Item system with consumable and passive items (Stopwatch, Magnifying Glass, Hourglass, X-Ray Glasses, Sleight of Hand)
 - Peek and flip mechanics that trade time for information
-- Crossfading music system with day/night/cutscene tracks
+- Crossfading music system 
 
 ## Built With
 
